@@ -1,0 +1,115 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks 
+    - tata
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok 
+    - cool 
+    
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - it didnt 
+    - it did not
+
+- intent: behaviour
+  examples: |
+    - what can you do?
+    - what do you do?
+    - what are you?
+    - who are you?
+    - what you do?
+
+- intent: utter_iamabot
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_weather
+  examples: |
+    - tell me weather 
+    - whats the weather now 
+    - how is it outside today
+    - can you tell me about the current weather
+    - what is the temperature today
+
+- intent: ask_location
+  examples: |
+    - [mumbai](location) 
+    - [delhi](location)
+    - [bangalore](location)
+    - [hyderbad](location)
+    - [trivanduram](location) 
+    - [chennai](location)
+
+- intent: ask_weather_location
+  examples: |
+    - tell me weather on [delhi](location)
+    - whats the weather now [chennai](location)
+    - how is it outside today [kokata](location)
+    - can you tell me about the current weather [bangalore](location)
+    - what is the temperature today in [hyderabad](location)
+
+- intent: q_gibberish
+  examples: |
+    - jksdhf 
+    - oiuytr
+    - watssaaan
+    - oiuy
+    - ghjkl
+
+- intent: out_of_context
+  examples: |
+    - order me a pizza
+    - who is pm 
+    - watch cricket 
+    - reserve a table 
+    - book a hotel 
+    - call my mom
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather Bot</title>
+</head>
+
+<style>
+    body{
+        background-image: url(weather.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-bottom: 500px;
+    }
+    h1{
+        color: white;
+    }
+</style>
+
+<body>
+
+    <marquee><h1 style = "color:white;">Welcome to Weather Chatbot</h1></marquee>
+    <script>!(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                customData: { language: "en" },
+                socketUrl: "http://localhost:5005",
+                title: "Weather Bot",
+                subtitle: "Say hi to get started"
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      </script>
+
+
+</body>
+
+</html>

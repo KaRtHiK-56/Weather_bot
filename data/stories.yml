@@ -1,0 +1,356 @@
+version: "3.1"
+
+stories:
+
+############################## weather & location ###########################################
+- story: path_1
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_2
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_3
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_4
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+############################## weather + location ###########################################
+- story: path_5
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather 
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_6
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather 
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_7
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_8
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_15
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_16
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_17
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path_18
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+########################## gibberish ##############################
+- story: path_9
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: q_gibberish
+  - action: utter_ask_gibberish
+
+- story: path_9
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: q_gibberish
+  - action: utter_ask_gibberish
+
+- story: path_9
+  steps:
+  - intent: q_gibberish
+  - action: utter_ask_gibberish
+
+- story: path_9
+  steps:
+  - intent: q_gibberish
+  - action: utter_ask_gibberish
+
+
+######################### out of scope ############################
+- story: path_11
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: out_of_context
+  - action: utter_ask_unwanted
+
+- story: path_12
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+  - intent: out_of_context
+  - action: utter_ask_unwanted
+
+- story: path_13
+  steps:
+  - intent: out_of_context
+  - action: utter_ask_unwanted
+
+- story: path_14
+  steps:
+  - intent: out_of_context
+  - action: utter_ask_unwanted
+
+###################### general rule ###############
+- story: path_111
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: path_112
+  steps:
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+
+
+- story: path_113
+  steps:
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+
+- story: path_1121
+  steps:
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+
+
+- story: path_1131
+  steps:
+  - intent: ask_weather_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_ask_positive
+  - action: utter_happy
+    
+
+- story: path_114
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+
+- story: path_115
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_prompt
+  - intent: ask_location
+  - action: utter_ask_load_getting
+  - action: action_weather
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_negative
+  - action: utter_cheer_up
+
+
+- story: path_116
+  steps:
+  - intent: greet
+  - action: action_greet_time
+  - action: utter_greet
+  - action: utter_greet_one
+
+- story: path_117
+  steps:
+  - intent: behaviour
+  - action: utter_iamabot
+
+- story: path_118
+  steps:
+  - intent: behaviour
+  - action: utter_iamabot

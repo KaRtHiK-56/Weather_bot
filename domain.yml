@@ -1,0 +1,90 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - utter_iamabot
+  - ask_weather
+  - ask_location
+  - ask_weather_location
+  - out_of_context
+  - q_gibberish
+  - behaviour
+
+
+entities:
+ - location
+
+slots:
+  location:
+    type: text
+    influence_conversation: True
+    mappings:
+    - type: from_entity
+      entity: location
+
+actions:
+ - action_weather
+ - action_greet_time
+ - action_feedback
+ - utter_ask_positive
+ - utter_ask_negative
+ - utter_ask_load_getting
+ - utter_ask_gibberish
+ - utter_ask_unwanted
+ - utter_ask_prompt
+
+
+
+responses:
+  utter_greet:
+  - text: "Welcome, I am Weather Bot"
+  utter_greet_one:
+  - text: "How can i help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up: 
+            What do you call a sick lemon? 
+            Answer: Lemon-aid"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+#  buttons:
+#    - title: "👍"
+#      payload:  "Yes"
+#    - title: "👎"
+#      payload: "No"
+
+  utter_happy:
+  - text: "Great to hear, carry on!"
+
+  utter_goodbye:
+  - text: "Bye, hope we can catch again later!"
+
+  utter_iamabot:
+  - text: "I am a weather bot, created by Karthik."
+
+  utter_ask_load_getting:
+  - text: "Fetching the Weather report for the location {location}"
+
+  utter_ask_negative:
+  - text: "Sorry to hear you, this feedback is noted for improvement"
+
+  utter_ask_positive:
+  - text: "Thanks for your feedback"
+
+  utter_ask_gibberish:
+  - text: "Sorry, I could not understand what you are trying to say"
+
+  utter_ask_unwanted:
+  - text: "Apologies, This action is beyond my scope of work, Please try again with something else."
+
+  utter_ask_prompt:
+  - text: "Could you please tell me for which location?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
